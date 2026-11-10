@@ -1,19 +1,88 @@
-# Grok Bot Token Saver · 慳用量 Skill
+# 慳用量 / Grok Bot Token Saver (v1.0.0)
+**多 bot 團隊「同一個每週額度用足成個星期」通用 Skill**  
+*Universal skill to make a multi-bot team's weekly usage pool last the whole week*  
+*複数ボット運用で週間使用枠を一週間もたせる汎用スキル*
 
-一個可以直接放入 Grok Bot（或者任何 agent）嘅 skill，幫多 bot 團隊慳每週用量。
+Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
-- **第一部分**：10 招，整理自 [@vartekxx](https://x.com/vartekxx) 嘅文章〈[GrokBot Token Usage: how to never hit your limit again in 10 step](https://x.com/vartekxx/status/2119105285851656535)〉。多謝原作者分享。
-- **第二部分**：12 條實戰補充，嚟自我哋一個 20 個 bot 嘅家庭團隊。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/platform-Cross--Platform-lightgrey.svg)](https://github.com/ycaistudio/grokbot-token-saver)
+[![i18n](https://img.shields.io/badge/i18n-繁體中文%20%7C%20English%20%7C%20日本語-green.svg)](https://github.com/ycaistudio/grokbot-token-saver)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ycaistudio/grokbot-token-saver/pulls)
 
-## 用法
-將 [`SKILL.md`](SKILL.md) 嘅內容貼俾你嘅 Primary Bot，叫佢存做 skill；之後喺對話打 `@grok-bot-usage-saving` 就用得。
+---
 
-建議第一步：叫佢做第 2 招「盤點」，只列唔改，再由你決定改邊樣。
+<p align="center">
+  <b>🌐 Language Navigation / 多語言切換 / 言語切り替え:</b><br>
+  <a href="README.md"><b>🇹🇼 繁體中文（主手冊）</b></a> •
+  <a href="README.en.md"><b>🇬🇧 English</b></a> •
+  <a href="README.ja.md"><b>🇯🇵 日本語</b></a>
+</p>
 
-## English summary
-A drop-in skill for Grok Bot multi-bot setups to stretch the weekly usage pool. Part 1 condenses the 10 tips from [@vartekxx's article](https://x.com/vartekxx/status/2119105285851656535) (full credit to the author). Part 2 adds 12 field-tested habits from a ~20-bot family setup: one-shot concise replies, high-risk-only warnings, batching decisions as "A1 B2", a three-strikes loop guard, non-waking rule notices, on-demand script-built dashboards, merging new reports into existing daily routines, weekly (not daily) maintenance, and starting fresh bots via [bot-reincarnation](https://github.com/ycaistudio/bot-reincarnation).
+---
 
-Not affiliated with SpaceXAI or Cursor. No official usage numbers are published; treat these as rules of thumb.
+## 📖 這是什麼？
 
-## License
-MIT
+2026 年 11 月初，好多 Grok Bot 用家一覺醒來發現每週用量去到 100%，離重置仲有幾日。  
+其實大部分用量唔係用喺真正嘅工作：routine 冇嘢做都照醒、bot 每次重讀幾個星期嘅對話、四個 bot 答同一條問題。
+
+**慳用量** 係一個可以直接放入 bot 嘅 skill，分兩部分：
+
+- **第一部分（10 招）**：整理自 [@vartekxx](https://x.com/vartekxx) 嘅文章〈[GrokBot Token Usage: how to never hit your limit again in 10 step](https://x.com/vartekxx/status/2119105285851656535)〉。
+- **第二部分（12 條實戰補充）**：嚟自我哋一個大約 20 個 bot 嘅家庭團隊，每日實際用緊。
+
+---
+
+## 🛡️ 點解需要？
+
+| 漏用量嘅地方 | 對應做法 |
+| :--- | :--- |
+| routine 每 15 分鐘醒一次，冇新嘢都照跑 | 拉疏到每小時或以下，改用事件觸發 |
+| bot 對話越拉越長，每次回覆都重讀 | 交接筆記 + 新 bot，或者用 [bot-reincarnation](https://github.com/ycaistudio/bot-reincarnation) 投胎 |
+| 群組入面幾個 bot 一齊答 | 一件工作一個負責 bot，bot 對 bot 每個任務最多 2 條訊息 |
+| 任務冇終點，bot 一直探索 | 寫明範圍、完成標準、停止條件、輸出字數 |
+| 用瀏覽器逐步撳 | connector 做得到就直接用 |
+| 幾個決定來回問幾次 | 標 A、B、C 同【1】【2】，用家一句「A1 B2」答晒 |
+| 同一個錯一直重試 | 錯三次就停，最多試一個新方法再報告 |
+
+---
+
+## 🧩 內容一覽
+
+**第一部分：10 招（來源：@vartekxx）**
+1. 睇用量表同重置日
+2. 盤點 routine、重複工作同群組（只列唔改）
+3. 拉疏 routine
+4. 改用事件觸發
+5. 長期工作交接俾新 bot
+6. 群組規則
+7. 任務要有終點
+8. 用 connector 代替瀏覽器
+9. 重複工作存成 skill
+10. 用到 80% 轉低用量模式
+
+**第二部分：實戰補充（11–22）**  
+一次講啱、只講高風險、決定一次過問晒、錯誤停止規則、改規則只通知受影響嘅 bot（唔叫醒）、儀表板按需要先用程式生成、狀態紀錄一行過、新報告併入現有日報、維護工作每週一次、暫停唔用嘅排程、bot 投胎、審批唔經轉述。
+
+詳細步驟睇 [`SKILL.md`](SKILL.md)。
+
+---
+
+## 🚀 點樣用？
+
+1. 將 [`SKILL.md`](SKILL.md) 全文貼俾你嘅 Primary Bot，叫佢「存做 skill」。
+2. 之後喺對話打 `@grok-bot-usage-saving` 就用得。
+3. 建議第一步：叫佢做第 2 招「盤點」，只列唔改，再由你決定改邊樣。
+
+所有改 routine、暫停、刪除嘅動作，skill 都要求先經你批准。
+
+---
+
+## 🙏 鳴謝
+
+- 第一部分嘅 10 招同提示詞概念嚟自 [@vartekxx](https://x.com/vartekxx/status/2119105285851656535)，多謝原作者分享。
+- 本 repo 同 SpaceXAI、Cursor 冇關係。官方未公佈用量數字，以上全屬經驗之談。
+
+## 📜 授權
+
+MIT License
