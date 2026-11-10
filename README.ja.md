@@ -6,8 +6,8 @@
 Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/platform-Cross--Platform-lightgrey.svg)] [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver) 
-[![i18n](https://img.shields.io/badge/i18n-繁體中文%20%7C%20English%20%7C%20日本語-green.svg)] [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver) 
+[![Platform](https://img.shields.io/badge/platform-Cross--Platform-lightgrey.svg)](https://github.com/ycaistudio/grokbot-token-saver)
+[![i18n](https://img.shields.io/badge/i18n-繁體中文%20%7C%20English%20%7C%20日本語-green.svg)](https://github.com/ycaistudio/grokbot-token-saver)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ycaistudio/grokbot-token-saver/pulls)
 
 ---
@@ -38,7 +38,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 | 使用量が漏れる所 | 対策 |
 | :--- | :--- |
 | 何も変わらなくても 15 分ごとに起動するルーティン | 1 時間ごと以下に減らし、イベントトリガーに切り替える |
-| 長い会話を毎回読み直す | 引き継ぎメモ＋新しいボット、または [bot-reincarnation] [`https://github.com/ycaistudio/bot-reincarnation`](https://github.com/ycaistudio/bot-reincarnation)  で転生 |
+| 長い会話を毎回読み直す | 引き継ぎメモ＋新しいボット、または [bot-reincarnation](https://github.com/ycaistudio/bot-reincarnation) で転生 |
 | グループで複数のボットが同時に答える | 仕事ごとに担当ボットは一体、ボット間メッセージは 1 タスク最大 2 通 |
 | 終わりのないタスク | 範囲、完了条件、停止条件、文字数上限を書く |
 | ブラウザで一つずつクリック | コネクタでできる手順はコネクタを使う |
@@ -70,7 +70,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 ## 🚀 使い方
 
-1. このリポジトリのリンク [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver) を Primary Bot に送り、`SKILL.md` を読んでスキルとして保存するよう頼みます。全文を貼り付ける必要はありません。
+1. このリポジトリのリンク（https://github.com/ycaistudio/grokbot-token-saver）を Primary Bot に送り、`SKILL.md` を読んでスキルとして保存するよう頼みます。全文を貼り付ける必要はありません。
 2. 以後はチャットで `@grok-bot-usage-saving` と呼び出せます。
 3. 最初のおすすめ：コツ 2 の棚卸しを実行（一覧のみで変更なし）、その後どれを変えるか決めます。
 
@@ -80,7 +80,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 ## 🔗 姉妹スキル：ボット転生（bot-reincarnation）
 
-[**BOT 投胎 / Bot Reincarnation**] [`https://github.com/ycaistudio/bot-reincarnation`](https://github.com/ycaistudio/bot-reincarnation)  は**新しいボット（新しいボット ID）**を作り、旧ボットの記憶・ルール・スキル・プロフィール・ルーティン・権限・接続をすべて引き継ぎますが、**会話履歴はあえて持ち込みません**。ID 登録表、長期引き継ぎファイル、三列チェックリストで漏れを防ぎ、旧ボットは自動削除せず、確認後に持ち主が手動で削除します。
+[**BOT 投胎 / Bot Reincarnation**](https://github.com/ycaistudio/bot-reincarnation) は**新しいボット（新しいボット ID）**を作り、旧ボットの記憶・ルール・スキル・プロフィール・ルーティン・権限・接続をすべて引き継ぎますが、**会話履歴はあえて持ち込みません**。ID 登録表、長期引き継ぎファイル、三列チェックリストで漏れを防ぎ、旧ボットは自動削除せず、確認後に持ち主が手動で削除します。
 
 トリガー：`duplicate yourself, everything including logged in tokens stays, except chat history -- start chat from scratch`（または `投胎`）。
 
