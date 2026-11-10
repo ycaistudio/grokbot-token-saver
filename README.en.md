@@ -1,4 +1,4 @@
-# Grok Bot Token Saver (v1.1.0)
+# Grok Bot Token Saver (v1.1.1)
 **Universal skill to make a multi-bot team's weekly usage pool last the whole week**  
 *多 bot 團隊「同一個每週額度用足成個星期」通用 Skill*  
 *複数ボット運用で週間使用枠を一週間もたせる汎用スキル*
@@ -70,7 +70,7 @@ Full steps are in [`SKILL.md`](SKILL.md) (written in Traditional Chinese / Canto
 
 ## 🚀 How to use
 
-1. Paste the whole [`SKILL.md`](SKILL.md) to your Primary Bot and ask it to save it as a skill.
+1. Send this repo link (https://github.com/ycaistudio/grokbot-token-saver) to your Primary Bot and ask it to read `SKILL.md` and save it as a skill; no need to paste the file.
 2. Call it in chat with `@grok-bot-usage-saving`.
 3. Suggested first step: run tip 2, the audit, which lists but changes nothing; then decide what to change.
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.1 (2026-11-10)
+- README: install by sending the repo link to your bot instead of pasting SKILL.md.
+
 ## v1.1.0 (2026-11-10)
 - README: companion skill section for bot-reincarnation and a step-by-step combined workflow (zh/en/ja).
 

@@ -1,4 +1,4 @@
-# Grok Bot Token Saver・使用量節約 (v1.1.0)
+# Grok Bot Token Saver・使用量節約 (v1.1.1)
 **複数ボット運用で週間使用枠を一週間もたせる汎用スキル**  
 *Universal skill to make a multi-bot team's weekly usage pool last the whole week*  
 *多 bot 團隊「同一個每週額度用足成個星期」通用 Skill*
@@ -70,7 +70,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 ## 🚀 使い方
 
-1. [`SKILL.md`](SKILL.md) の全文を Primary Bot に貼り付け、スキルとして保存するよう頼みます。
+1. このリポジトリのリンク（https://github.com/ycaistudio/grokbot-token-saver）を Primary Bot に送り、`SKILL.md` を読んでスキルとして保存するよう頼みます。全文を貼り付ける必要はありません。
 2. 以後はチャットで `@grok-bot-usage-saving` と呼び出せます。
 3. 最初のおすすめ：コツ 2 の棚卸しを実行（一覧のみで変更なし）、その後どれを変えるか決めます。
 
