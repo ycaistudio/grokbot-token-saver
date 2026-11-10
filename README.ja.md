@@ -1,4 +1,4 @@
-# Grok Bot Token Saver・使用量節約 (v1.0.0)
+# Grok Bot Token Saver・使用量節約 (v1.1.0)
 **複数ボット運用で週間使用枠を一週間もたせる汎用スキル**  
 *Universal skill to make a multi-bot team's weekly usage pool last the whole week*  
 *多 bot 團隊「同一個每週額度用足成個星期」通用 Skill*
@@ -75,6 +75,26 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 3. 最初のおすすめ：コツ 2 の棚卸しを実行（一覧のみで変更なし）、その後どれを変えるか決めます。
 
 ルーティンの変更・一時停止・削除は、必ず事前にあなたの承認が必要です。
+
+---
+
+## 🔗 姉妹スキル：ボット転生（bot-reincarnation）
+
+[**BOT 投胎 / Bot Reincarnation**](https://github.com/ycaistudio/bot-reincarnation) は**新しいボット（新しいボット ID）**を作り、旧ボットの記憶・ルール・スキル・プロフィール・ルーティン・権限・接続をすべて引き継ぎますが、**会話履歴はあえて持ち込みません**。ID 登録表、長期引き継ぎファイル、三列チェックリストで漏れを防ぎ、旧ボットは自動削除せず、確認後に持ち主が手動で削除します。
+
+トリガー：`duplicate yourself, everything including logged in tokens stays, except chat history -- start chat from scratch`（または `投胎`）。
+
+### 連続して使う：節約 → 転生 → 節約を続ける
+
+| 手順 | スキル | 内容 |
+| :--- | :--- | :--- |
+| 1 | Token Saver コツ 2 | 棚卸し：使用量の多いルーティン、グループ、**会話が最も長いボット**を見つける |
+| 2 | Token Saver コツ 3〜4、6 | 頻度を下げ、トリガー化し、グループのルールを決める（承認後） |
+| 3 | **ボット転生** | 会話が長いボットを転生：記憶と権限は残し、長い会話は持ち込まない |
+| 4 | Token Saver コツ 9、11〜22 | 新しいボットは最初から節約ルールで動く |
+| 5 | 毎週メーターを確認 | 約 80% でコツ 10（低使用量モード）、会話がまた長くなったら手順 3 へ |
+
+両方のスキルを Primary Bot に保存したら、「@grok-bot-usage-saving で棚卸しして、転生すべきボットを教えて」と言うだけです。
 
 ---
 

@@ -1,4 +1,4 @@
-# Grok Bot Token Saver (v1.0.0)
+# Grok Bot Token Saver (v1.1.0)
 **Universal skill to make a multi-bot team's weekly usage pool last the whole week**  
 *多 bot 團隊「同一個每週額度用足成個星期」通用 Skill*  
 *複数ボット運用で週間使用枠を一週間もたせる汎用スキル*
@@ -75,6 +75,26 @@ Full steps are in [`SKILL.md`](SKILL.md) (written in Traditional Chinese / Canto
 3. Suggested first step: run tip 2, the audit, which lists but changes nothing; then decide what to change.
 
 The skill requires your approval before any routine is changed, paused or deleted.
+
+---
+
+## 🔗 Companion skill: Bot Reincarnation
+
+[**BOT 投胎 / Bot Reincarnation**](https://github.com/ycaistudio/bot-reincarnation) starts a **fresh bot (new bot ID)** and hands over the old bot's memory, rules, skills, profile, routines, permissions and connections, while **deliberately leaving the chat history behind**. It uses an ID registry, a long-term handover file and a three-column checklist; the old bot is never auto-deleted, and you delete it yourself once you confirm.
+
+Trigger: `duplicate yourself, everything including logged in tokens stays, except chat history -- start chat from scratch` (or `投胎`).
+
+### Use them in sequence: save → reincarnate → keep saving
+
+| Step | Skill | What it does |
+| :--- | :--- | :--- |
+| 1 | Token Saver tip 2 | Audit: find the heaviest routines, group chats and the **bots with the longest chats** |
+| 2 | Token Saver tips 3–4, 6 | Slow routines, switch to triggers, set group rules (after your OK) |
+| 3 | **Bot Reincarnation** | Reincarnate the longest-chat bots: memory and permissions stay, the long chat does not |
+| 4 | Token Saver tips 9, 11–22 | The fresh bot follows the saving habits from day one |
+| 5 | Check the meter weekly | At ~80% use tip 10 (low-usage mode); when a bot's chat grows long again, go back to step 3 |
+
+With both skills saved to your Primary Bot, just say: "Use @grok-bot-usage-saving to audit and tell me which bots to reincarnate."
 
 ---
 

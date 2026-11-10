@@ -1,4 +1,4 @@
-# 慳用量 / Grok Bot Token Saver (v1.0.0)
+# 慳用量 / Grok Bot Token Saver (v1.1.0)
 **多 bot 團隊「同一個每週額度用足成個星期」通用 Skill**  
 *Universal skill to make a multi-bot team's weekly usage pool last the whole week*  
 *複数ボット運用で週間使用枠を一週間もたせる汎用スキル*
@@ -75,6 +75,26 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 3. 建議第一步：叫佢做第 2 招「盤點」，只列唔改，再由你決定改邊樣。
 
 所有改 routine、暫停、刪除嘅動作，skill 都要求先經你批准。
+
+---
+
+## 🔗 姊妹 Skill：BOT 投胎（bot-reincarnation）
+
+[**BOT 投胎 / Bot Reincarnation**](https://github.com/ycaistudio/bot-reincarnation) 會開一個**新 bot（新 bot ID）**，將舊 bot 嘅記憶、守則、skill、profile、routine、權限同連接全部交接過去，但**刻意唔帶對話紀錄**，chat 由零開始。過程有身分登記表、長期交接文件同三欄清單；舊 bot 唔會自動刪，要主人確認後自己手動刪。
+
+觸發詞：`投胎`、`換 bot ID`，或者 `duplicate yourself, everything including logged in tokens stays, except chat history -- start chat from scratch`。
+
+### 一連串用法：慳用量 → 投胎 → 再慳
+
+| 步驟 | 用邊個 | 做咩 |
+| :--- | :--- | :--- |
+| 1 | 慳用量 第 2 招 | 盤點，搵出最食用量嘅 routine、群組同**對話最長嘅 bot** |
+| 2 | 慳用量 第 3–4、6 招 | 拉疏 routine、改事件觸發、定群組規則（經你批准） |
+| 3 | **BOT 投胎** | 將對話最長嘅 bot 投胎，記憶同權限保留，長對話唔帶走 |
+| 4 | 慳用量 第 9、11–22 招 | 新 bot 一開始就跟住慳用量守則做嘢 |
+| 5 | 每週睇一次用量表 | 去到 80% 就用第 10 招轉低用量模式；某個 bot 對話又變長，就返去第 3 步 |
+
+兩個 skill 都存入 Primary Bot 之後，可以直接講：「用 @grok-bot-usage-saving 盤點，搵出要投胎嘅 bot」。
 
 ---
 
