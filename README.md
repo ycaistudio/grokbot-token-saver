@@ -6,8 +6,8 @@
 Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/platform-Cross--Platform-lightgrey.svg)](https://github.com/ycaistudio/grokbot-token-saver)
-[![i18n](https://img.shields.io/badge/i18n-繁體中文%20%7C%20English%20%7C%20日本語-green.svg)](https://github.com/ycaistudio/grokbot-token-saver)
+[![Platform](https://img.shields.io/badge/platform-Cross--Platform-lightgrey.svg)] [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver) 
+[![i18n](https://img.shields.io/badge/i18n-繁體中文%20%7C%20English%20%7C%20日本語-green.svg)] [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ycaistudio/grokbot-token-saver/pulls)
 
 ---
@@ -38,7 +38,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 | 漏用量嘅地方 | 對應做法 |
 | :--- | :--- |
 | routine 每 15 分鐘醒一次，冇新嘢都照跑 | 拉疏到每小時或以下，改用事件觸發 |
-| bot 對話越拉越長，每次回覆都重讀 | 交接筆記 + 新 bot，或者用 [bot-reincarnation](https://github.com/ycaistudio/bot-reincarnation) 投胎 |
+| bot 對話越拉越長，每次回覆都重讀 | 交接筆記 + 新 bot，或者用 [bot-reincarnation] [`https://github.com/ycaistudio/bot-reincarnation`](https://github.com/ycaistudio/bot-reincarnation)  投胎 |
 | 群組入面幾個 bot 一齊答 | 一件工作一個負責 bot，bot 對 bot 每個任務最多 2 條訊息 |
 | 任務冇終點，bot 一直探索 | 寫明範圍、完成標準、停止條件、輸出字數 |
 | 用瀏覽器逐步撳 | connector 做得到就直接用 |
@@ -70,7 +70,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 ## 🚀 點樣用？
 
-1. 將本 repo 條 link（https://github.com/ycaistudio/grokbot-token-saver）俾你嘅 Primary Bot，叫佢「讀 SKILL.md 存做 skill」，唔使自己複製全文。
+1. 將本 repo 條 link [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver) 俾你嘅 Primary Bot，叫佢「讀 SKILL.md 存做 skill」，唔使自己複製全文。
 2. 之後喺對話打 `@grok-bot-usage-saving` 就用得。
 3. 建議第一步：叫佢做第 2 招「盤點」，只列唔改，再由你決定改邊樣。
 
@@ -80,7 +80,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 ## 🔗 姊妹 Skill：BOT 投胎（bot-reincarnation）
 
-[**BOT 投胎 / Bot Reincarnation**](https://github.com/ycaistudio/bot-reincarnation) 會開一個**新 bot（新 bot ID）**，將舊 bot 嘅記憶、守則、skill、profile、routine、權限同連接全部交接過去，但**刻意唔帶對話紀錄**，chat 由零開始。過程有身分登記表、長期交接文件同三欄清單；舊 bot 唔會自動刪，要主人確認後自己手動刪。
+[**BOT 投胎 / Bot Reincarnation**] [`https://github.com/ycaistudio/bot-reincarnation`](https://github.com/ycaistudio/bot-reincarnation)  會開一個**新 bot（新 bot ID）**，將舊 bot 嘅記憶、守則、skill、profile、routine、權限同連接全部交接過去，但**刻意唔帶對話紀錄**，chat 由零開始。過程有身分登記表、長期交接文件同三欄清單；舊 bot 唔會自動刪，要主人確認後自己手動刪。
 
 觸發詞：`投胎`、`換 bot ID`，或者 `duplicate yourself, everything including logged in tokens stays, except chat history -- start chat from scratch`。
 

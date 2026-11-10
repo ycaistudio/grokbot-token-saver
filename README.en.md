@@ -6,8 +6,8 @@
 Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/platform-Cross--Platform-lightgrey.svg)](https://github.com/ycaistudio/grokbot-token-saver)
-[![i18n](https://img.shields.io/badge/i18n-繁體中文%20%7C%20English%20%7C%20日本語-green.svg)](https://github.com/ycaistudio/grokbot-token-saver)
+[![Platform](https://img.shields.io/badge/platform-Cross--Platform-lightgrey.svg)] [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver) 
+[![i18n](https://img.shields.io/badge/i18n-繁體中文%20%7C%20English%20%7C%20日本語-green.svg)] [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ycaistudio/grokbot-token-saver/pulls)
 
 ---
@@ -38,7 +38,7 @@ Most of that pool was never spent on real work: routines waking up with nothing 
 | Where usage leaks | What to do |
 | :--- | :--- |
 | Routines wake every 15 minutes even when nothing changed | Hourly or slower; switch to event triggers |
-| Long chats re-read on every reply | Handoff note + fresh bot, or reincarnate with [bot-reincarnation](https://github.com/ycaistudio/bot-reincarnation) |
+| Long chats re-read on every reply | Handoff note + fresh bot, or reincarnate with [bot-reincarnation] [`https://github.com/ycaistudio/bot-reincarnation`](https://github.com/ycaistudio/bot-reincarnation)  |
 | Several bots answer in one group chat | One owner per job; max 2 bot-to-bot messages per task |
 | Open-ended tasks keep exploring | State scope, finish line, stop rule and word limit |
 | Clicking through a browser | Use a connector when one can do the step |
@@ -70,7 +70,7 @@ Full steps are in [`SKILL.md`](SKILL.md) (written in Traditional Chinese / Canto
 
 ## 🚀 How to use
 
-1. Send this repo link (https://github.com/ycaistudio/grokbot-token-saver) to your Primary Bot and ask it to read `SKILL.md` and save it as a skill; no need to paste the file.
+1. Send this repo link  [`https://github.com/ycaistudio/grokbot-token-saver`](https://github.com/ycaistudio/grokbot-token-saver)  to your Primary Bot and ask it to read `SKILL.md` and save it as a skill; no need to paste the file.
 2. Call it in chat with `@grok-bot-usage-saving`.
 3. Suggested first step: run tip 2, the audit, which lists but changes nothing; then decide what to change.
 
@@ -80,7 +80,7 @@ The skill requires your approval before any routine is changed, paused or delete
 
 ## 🔗 Companion skill: Bot Reincarnation
 
-[**BOT 投胎 / Bot Reincarnation**](https://github.com/ycaistudio/bot-reincarnation) starts a **fresh bot (new bot ID)** and hands over the old bot's memory, rules, skills, profile, routines, permissions and connections, while **deliberately leaving the chat history behind**. It uses an ID registry, a long-term handover file and a three-column checklist; the old bot is never auto-deleted, and you delete it yourself once you confirm.
+[**BOT 投胎 / Bot Reincarnation**] [`https://github.com/ycaistudio/bot-reincarnation`](https://github.com/ycaistudio/bot-reincarnation)  starts a **fresh bot (new bot ID)** and hands over the old bot's memory, rules, skills, profile, routines, permissions and connections, while **deliberately leaving the chat history behind**. It uses an ID registry, a long-term handover file and a three-column checklist; the old bot is never auto-deleted, and you delete it yourself once you confirm.
 
 Trigger: `duplicate yourself, everything including logged in tokens stays, except chat history -- start chat from scratch` (or `投胎`).
 
