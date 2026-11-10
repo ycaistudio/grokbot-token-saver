@@ -70,7 +70,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 ## 🚀 使い方
 
-1. このリポジトリのリンク（https://github.com/ycaistudio/grokbot-token-saver）を Primary Bot に送り、`SKILL.md` を読んでスキルとして保存するよう頼みます。全文を貼り付ける必要はありません。
+1. このリポジトリのリンク [https://github.com/ycaistudio/grokbot-token-saver](https://github.com/ycaistudio/grokbot-token-saver) を Primary Bot に送り、`SKILL.md` を読んでスキルとして保存するよう頼みます。全文を貼り付ける必要はありません。
 2. 以後はチャットで `@grok-bot-usage-saving` と呼び出せます。
 3. 最初のおすすめ：コツ 2 の棚卸しを実行（一覧のみで変更なし）、その後どれを変えるか決めます。
 

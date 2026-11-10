@@ -70,7 +70,7 @@ Grok Bot · Claude Code · Cursor · OpenAI · Local LLMs
 
 ## 🚀 點樣用？
 
-1. 將本 repo 條 link（https://github.com/ycaistudio/grokbot-token-saver）俾你嘅 Primary Bot，叫佢「讀 SKILL.md 存做 skill」，唔使自己複製全文。
+1. 將本 repo 條 link [https://github.com/ycaistudio/grokbot-token-saver](https://github.com/ycaistudio/grokbot-token-saver) 俾你嘅 Primary Bot，叫佢「讀 SKILL.md 存做 skill」，唔使自己複製全文。
 2. 之後喺對話打 `@grok-bot-usage-saving` 就用得。
 3. 建議第一步：叫佢做第 2 招「盤點」，只列唔改，再由你決定改邊樣。
 

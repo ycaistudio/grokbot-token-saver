@@ -70,7 +70,7 @@ Full steps are in [`SKILL.md`](SKILL.md) (written in Traditional Chinese / Canto
 
 ## 🚀 How to use
 
-1. Send this repo link (https://github.com/ycaistudio/grokbot-token-saver) to your Primary Bot and ask it to read `SKILL.md` and save it as a skill; no need to paste the file.
+1. Send this repo link [https://github.com/ycaistudio/grokbot-token-saver](https://github.com/ycaistudio/grokbot-token-saver) to your Primary Bot and ask it to read `SKILL.md` and save it as a skill; no need to paste the file.
 2. Call it in chat with `@grok-bot-usage-saving`.
 3. Suggested first step: run tip 2, the audit, which lists but changes nothing; then decide what to change.
 
