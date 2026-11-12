@@ -1,4 +1,5 @@
 # 慳用量 / Grok Bot Token Saver (v1.1.1)
+![Grokbot Token Saver](docs/yc-ai-studio-poster.jpg)
 **多 bot 團隊「同一個每週額度用足成個星期」通用 Skill**  
 *Universal skill to make a multi-bot team's weekly usage pool last the whole week*  
 *複数ボット運用で週間使用枠を一週間もたせる汎用スキル*
